@@ -1,0 +1,11 @@
+.\output\sys.o: SYSTEM\sys\sys.c
+.\output\sys.o: .\./SYSTEM/sys/sys.h
+.\output\sys.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\sys.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\output\sys.o: .\CMSIS\Include\core_cm4.h
+.\output\sys.o: D:\Keil5\KeilSTM32F1\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\sys.o: .\CMSIS\Include\cmsis_version.h
+.\output\sys.o: .\CMSIS\Include\cmsis_compiler.h
+.\output\sys.o: .\CMSIS\Include\cmsis_armcc.h
+.\output\sys.o: .\CMSIS\Include\mpu_armv7.h
+.\output\sys.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

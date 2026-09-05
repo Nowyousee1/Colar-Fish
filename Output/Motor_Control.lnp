@@ -1,0 +1,15 @@
+--cpu=Cortex-M4.fp
+".\output\startup_stm32f407xx.o"
+".\output\system_stm32f4xx.o"
+".\output\main.o"
+".\output\stm32f4xx_it.o"
+".\output\delay.o"
+".\output\usart.o"
+".\output\pwm.o"
+".\output\motor.o"
+".\output\relay.o"
+".\output\stepper.o"
+--library_type=microlib --strict --scatter ".\Output\Motor_Control.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Output\Motor_Control.map" -o .\Output\Motor_Control.axf

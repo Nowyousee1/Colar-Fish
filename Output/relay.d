@@ -1,0 +1,12 @@
+.\output\relay.o: HARDWARE\relay\relay.c
+.\output\relay.o: .\./HARDWARE/relay/relay.h
+.\output\relay.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\relay.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\output\relay.o: .\CMSIS\Include\core_cm4.h
+.\output\relay.o: D:\Keil5\KeilSTM32F1\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\relay.o: .\CMSIS\Include\cmsis_version.h
+.\output\relay.o: .\CMSIS\Include\cmsis_compiler.h
+.\output\relay.o: .\CMSIS\Include\cmsis_armcc.h
+.\output\relay.o: .\CMSIS\Include\mpu_armv7.h
+.\output\relay.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\output\relay.o: .\./HARDWARE/motor/motor.h

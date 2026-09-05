@@ -1,0 +1,12 @@
+.\output\dc_motor.o: HARDWARE\dc_motor\dc_motor.c
+.\output\dc_motor.o: .\./HARDWARE/dc_motor/dc_motor.h
+.\output\dc_motor.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\dc_motor.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\output\dc_motor.o: .\CMSIS\Include\core_cm4.h
+.\output\dc_motor.o: D:\Keil5\KeilSTM32F1\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\dc_motor.o: .\CMSIS\Include\cmsis_version.h
+.\output\dc_motor.o: .\CMSIS\Include\cmsis_compiler.h
+.\output\dc_motor.o: .\CMSIS\Include\cmsis_armcc.h
+.\output\dc_motor.o: .\CMSIS\Include\mpu_armv7.h
+.\output\dc_motor.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h
+.\output\dc_motor.o: .\./HARDWARE/pwm/pwm.h

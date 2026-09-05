@@ -1,0 +1,11 @@
+.\output\pwm.o: HARDWARE\pwm\pwm.c
+.\output\pwm.o: .\./HARDWARE/pwm/pwm.h
+.\output\pwm.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\pwm.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\output\pwm.o: .\CMSIS\Include\core_cm4.h
+.\output\pwm.o: D:\Keil5\KeilSTM32F1\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\pwm.o: .\CMSIS\Include\cmsis_version.h
+.\output\pwm.o: .\CMSIS\Include\cmsis_compiler.h
+.\output\pwm.o: .\CMSIS\Include\cmsis_armcc.h
+.\output\pwm.o: .\CMSIS\Include\mpu_armv7.h
+.\output\pwm.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

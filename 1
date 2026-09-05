@@ -1,0 +1,82 @@
+/**
+ ****************************************************************************************************
+ * @file        stepper.c
+ * @brief       步进电机驱动 (TIM6中断GPIO翻转)
+ *              PUL: PF13, TIM6中断翻转, 32KHz IRQ -> 16KHz方波
+ *              DIR: PF14, 普通GPIO输出
+ *              TIM6: APB1 84MHz, PSC=0, ARR=2624 -> 32KHz
+ ****************************************************************************************************
+ */
+
+#include "./HARDWARE/stepper/stepper.h"
+
+static uint8_t g_stepper_running = 0;   /* 步进电机运行标志 */
+
+
+/**
+ * @brief       初始化步进电机
+ * @note        PF13=GPIO输出(TIM6中断翻转), PF14=GPIO输出(DIR)
+ */
+void stepper_init(void)
+{
+    /* GPIOF时钟 */
+    RCC->AHB1ENR |= 1UL << 5;
+
+    /* PF13: PUL, 推挽输出, 初始低电平 */
+    sys_gpio_set(STEPPER_PUL_PORT, STEPPER_PUL_PIN,
+                 SYS_GPIO_MODE_OUT, SYS_GPIO_OTYPE_PP,
+                 SYS_GPIO_SPEED_HIGH, SYS_GPIO_PUPD_NONE);
+    sys_gpio_pin_set(STEPPER_PUL_PORT, STEPPER_PUL_PIN, 0);
+
+    /* PF14: DIR方向, 推挽输出 */
+    sys_gpio_set(STEPPER_DIR_PORT, STEPPER_DIR_PIN,
+                 SYS_GPIO_MODE_OUT, SYS_GPIO_OTYPE_PP,
+                 SYS_GPIO_SPEED_MID, SYS_GPIO_PUPD_NONE);
+    sys_gpio_pin_set(STEPPER_DIR_PORT, STEPPER_DIR_PIN, 1);  /* 默认CW */
+
+    /* TIM6: 84MHz / 2625 = 32KHz (APB1x2) */
+    RCC->APB1ENR |= 1UL << 4;   /* TIM6时钟使能 */
+    TIM6->PSC = STEPPER_TIM_PSC;
+    TIM6->ARR = STEPPER_TIM_ARR;
+    TIM6->DIER |= 1UL << 0;     /* UIE: 更新中断使能 */
+    TIM6->CR1 |= 1UL << 7;      /* ARPE */
+    TIM6->EGR |= 1UL << 0;      /* UG: 更新生成, 初始化计数器 */
+    TIM6->CR1 |= 1UL << 0;      /* CEN: 使能定时器 */
+
+    /* NVIC: TIM6中断, 抢占优先级2, 响应优先级0, 分组2 */
+    sys_nvic_init(2, 0, TIM6_DAC_IRQn, 2);
+
+    g_stepper_running = 1;
+}
+
+
+/**
+ * @brief       TIM6中断服务函数
+ * @note        32KHz触发, 每次翻转PF13 -> PUL输出16KHz方波
+ */
+void TIM6_DAC_IRQHandler(void)
+{
+    if (TIM6->SR & (1UL << 0))
+    {
+        TIM6->SR = 0;   /* 清除UIF (写0清除) */
+
+        if (g_stepper_running)
+        {
+            /* 翻转PF13 -> 16KHz脉冲 */
+            if (sys_gpio_pin_get(STEPPER_PUL_PORT, STEPPER_PUL_PIN))
+                sys_gpio_pin_set(STEPPER_PUL_PORT, STEPPER_PUL_PIN, 0);
+            else
+                sys_gpio_pin_set(STEPPER_PUL_PORT, STEPPER_PUL_PIN, 1);
+        }
+    }
+}
+
+
+/**
+ * @brief       设置步进电机方向
+ * @param       dir: STEPPER_DIR_CW(1) 或 STEPPER_DIR_CCW(0)
+ */
+void stepper_set_dir(uint8_t dir)
+{
+    sys_gpio_pin_set(STEPPER_DIR_PORT, STEPPER_DIR_PIN, dir ? 1 : 0);
+}

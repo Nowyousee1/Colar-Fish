@@ -1,0 +1,12 @@
+.\output\usart.o: SYSTEM\usart\usart.c
+.\output\usart.o: .\./SYSTEM/usart/usart.h
+.\output\usart.o: D:\Keil5\KeilSTM32F1\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\usart.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\output\usart.o: .\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h
+.\output\usart.o: .\CMSIS\Include\core_cm4.h
+.\output\usart.o: D:\Keil5\KeilSTM32F1\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\usart.o: .\CMSIS\Include\cmsis_version.h
+.\output\usart.o: .\CMSIS\Include\cmsis_compiler.h
+.\output\usart.o: .\CMSIS\Include\cmsis_armcc.h
+.\output\usart.o: .\CMSIS\Include\mpu_armv7.h
+.\output\usart.o: .\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h

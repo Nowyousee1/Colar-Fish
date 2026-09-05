@@ -1,0 +1,122 @@
+Dependencies for Project 'Motor_Control', Target 'Motor_Control': (DO NOT MODIFY !)
+F (.\CORE\startup_stm32f407xx.s)(0x6A0B0928)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "STM32F407xx SETA 1"--list .\output\startup_stm32f407xx.lst --xref -o .\output\startup_stm32f407xx.o --depend .\output\startup_stm32f407xx.d)
+F (.\CMSIS\Device\ST\STM32F4xx\Source\system_stm32f4xx.c)(0x6A0B0928)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\system_stm32f4xx.o --omf_browse .\output\system_stm32f4xx.crf --depend .\output\system_stm32f4xx.d)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+F (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)()
+F (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)()
+F (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)()
+F (.\USER\main.c)(0x6A9BD9A7)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (.\./USER/main.h)(0x6A9BD8EC)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+I (.\./SYSTEM/delay/delay.h)(0x6A33FE73)
+I (.\./SYSTEM/usart/usart.h)(0x6A340002)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (.\./HARDWARE/pwm/pwm.h)(0x6A9BD804)
+I (.\./HARDWARE/motor/motor.h)(0x6A33FE7B)
+I (.\./HARDWARE/relay/relay.h)(0x6A9BD804)
+I (.\./HARDWARE/stepper/stepper.h)(0x6A3402FD)
+F (.\USER\main.h)(0x6A9BD8EC)()
+F (.\USER\stm32f4xx_it.c)(0x6A0B1108)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\stm32f4xx_it.o --omf_browse .\output\stm32f4xx_it.crf --depend .\output\stm32f4xx_it.d)
+I (.\./USER/stm32f4xx_it.h)(0x6A33FE80)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+F (.\USER\stm32f4xx_it.h)(0x6A33FE80)()
+F (.\SYSTEM\delay\delay.c)(0x6A33FEDE)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
+I (.\./SYSTEM/delay/delay.h)(0x6A33FE73)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+F (.\SYSTEM\delay\delay.h)(0x6A33FE73)()
+F (.\SYSTEM\usart\usart.c)(0x6A33FFF9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\usart.o --omf_browse .\output\usart.crf --depend .\output\usart.d)
+I (.\./SYSTEM/usart/usart.h)(0x6A340002)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+F (.\SYSTEM\usart\usart.h)(0x6A340002)()
+F (.\HARDWARE\pwm\pwm.c)(0x6A9BD804)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\pwm.o --omf_browse .\output\pwm.crf --depend .\output\pwm.d)
+I (.\./HARDWARE/pwm/pwm.h)(0x6A9BD804)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+F (.\HARDWARE\pwm\pwm.h)(0x6A9BD804)()
+F (.\HARDWARE\motor\motor.c)(0x6A3541C6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\motor.o --omf_browse .\output\motor.crf --depend .\output\motor.d)
+I (.\./HARDWARE/motor/motor.h)(0x6A33FE7B)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+I (.\./HARDWARE/pwm/pwm.h)(0x6A9BD804)
+F (.\HARDWARE\motor\motor.h)(0x6A33FE7B)()
+F (.\HARDWARE\relay\relay.c)(0x6A9BD804)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\relay.o --omf_browse .\output\relay.crf --depend .\output\relay.d)
+I (.\./HARDWARE/relay/relay.h)(0x6A9BD804)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+I (.\./HARDWARE/motor/motor.h)(0x6A33FE7B)
+F (.\HARDWARE\relay\relay.h)(0x6A9BD804)()
+F (.\HARDWARE\stepper\stepper.c)(0x6A34057C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\CMSIS\Include -I .\CMSIS\Device\ST\STM32F4xx\Include -I .\USER -I .\SYSTEM\delay -I .\SYSTEM\usart -I .\HARDWARE\pwm -I .\HARDWARE\motor -I .\HARDWARE\relay -I .\HARDWARE\stepper -I .\HARDWARE\dc_motor-I.\RTE\_Motor_Control-ID:\Keil5\KeilSTM32F1\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\KeilSTM32F1\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F407xx -DSTM32F407xx-o .\output\stepper.o --omf_browse .\output\stepper.crf --depend .\output\stepper.d)
+I (.\./HARDWARE/stepper/stepper.h)(0x6A3402FD)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x6A0B0928)
+I (.\CMSIS\Include\core_cm4.h)(0x6A0B0928)
+I (D:\Keil5\KeilSTM32F1\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (.\CMSIS\Include\cmsis_version.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_compiler.h)(0x6A0B0928)
+I (.\CMSIS\Include\cmsis_armcc.h)(0x6A0B0928)
+I (.\CMSIS\Include\mpu_armv7.h)(0x6A0B0928)
+I (.\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6A0B0928)
+I (.\./SYSTEM/delay/delay.h)(0x6A33FE73)
+F (.\HARDWARE\stepper\stepper.h)(0x6A3402FD)()
